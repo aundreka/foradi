@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "typecheck": "tsc -noEmit",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier . -w",
+    "format:check": "prettier . -c"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.19",
